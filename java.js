@@ -97,3 +97,29 @@ const navButtons4 = document.querySelectorAll(".nav-btn4");
 const slides4 = document.querySelectorAll(".image-sl4");
 const contents4 = document.querySelectorAll(".slcontain4");
 initializeSlider(navButtons4, slides4);
+
+var swiper = new Swiper(".room-slider", {
+    spaceBetween: 20,
+    grabCursor:true,
+    loop:true,
+    centeredSlides:true,
+    autoplay: {
+        delay: 7500,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        991: {
+            slidesPerView: 3,
+        },
+    },
+});
