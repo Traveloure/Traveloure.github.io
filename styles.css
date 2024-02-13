@@ -1,15 +1,18 @@
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
 :root{
     --text-color-1:#000;
     --text-color-2:#000;
     --text-color-3:#00000083;
+    --text-color-4:#fff;
     --bg-color-1: rgba(150, 204, 204, 0.521);
     --bg-color-2:#eee;
     --bg-color-3: rgb(150, 204, 204);
     --bg-color-4: rgba(3, 94, 251, 0.315);
     --bg-color-5: rgb(121, 209, 209);
     --bg-color-6: #fff;
-    --box-shadow: 0 .5rem 1.5rem rgba(0 00 0, .1);
+    --bg-color-7: rgb(29, 58, 58);
+    --box-shadow: 0 .5rem 1.5rem rgba(0 00 0, 0.1);
 
 }
 
@@ -23,6 +26,8 @@
     text-decoration: none;
     transition: all .2s linear;
 }
+
+
 
 html {
     font-size: 62.5%;
@@ -49,12 +54,15 @@ body.active{
     --text-color-1: #fff;
     --text-color-2: #000;
     --text-color-3:#fff;
+    --text-color-4:#000;
     --bg-color-1: rgba(29, 58, 58, 0.849);
     --bg-color-2:#eee;
     --bg-color-3: rgb(43, 66, 66);
     --bg-color-4: rgba(3, 25, 63, 0.568);
     --bg-color-5: rgba(29, 58, 58, 0.849);
     --bg-color-6: rgb(29, 58, 58);
+    --bg-color-7: #fff;
+
     --box-shadow: 0 .5rem 1.5rem rgba(0 0 0 .1);
 }
 
@@ -78,7 +86,7 @@ header {
     background: var(--bg-color-6);
     color: var(--text-color-1);
     padding: 10px 30px;
-    border: .20px solid #353636;
+    border-radius: .5rem;
     cursor: pointer;
     font-size: 17px;
     font-weight: 700;
@@ -90,6 +98,16 @@ header {
 
 section {
     padding: 100px 100px;
+}
+
+.heading{
+    opacity: 0.8;
+    font-size: 4rem;
+    color: var(--text-color-1);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 3rem;
 }
 
 /*LOGO*/
@@ -121,23 +139,9 @@ header .navbar a:hover {
     text-decoration: none;
     text-align: center;
     font-size: 20px;
+    font-weight: bolder;
 }
 
-navbar li ul.dropdown li{
-    display: block;
-}
-
-.navbar ul.dropdown{
-    width: 100%;
-    background: var(--bg-color-2);
-    position: absolute;
-    z-index: 999;
-    display: none;
-}
-
-.navbar ul li:hover ul.dropdown{
-    display: block;
-}
 
 
 /* SEARCH BAR */
@@ -278,7 +282,7 @@ header .icons i:hover {
 .navbar-name span {
     color: var(--text-color-1);
     font-weight: 1000;
-    font-size: 4rem; 
+    font-size: 5rem; 
     margin-top: 100%;
 }
 
@@ -333,6 +337,7 @@ header .icons i:hover {
 }
 
 .slider1 .slcontain1 p{
+    text-align: justify;
     font-size: 1.8em;
     margin-bottom: 10%;
 }
@@ -454,6 +459,7 @@ header .icons i:hover {
 }
 
 .slider2 .slcontain2 p{
+    text-align: justify;
     font-size: 1.8em;
     margin-bottom: 10%;
 }
@@ -573,6 +579,7 @@ header .icons i:hover {
 }
 
 .slider3 .slcontain3 p{
+    text-align: justify;
     font-size: 1.8em;
     margin-bottom: 10%;
 }
@@ -692,6 +699,7 @@ header .icons i:hover {
 }
 
 .slider4 .slcontain4 p{
+    text-align: justify;
     font-size: 1.8em;
     margin-bottom: 10%;
 }
@@ -760,6 +768,29 @@ header .icons i:hover {
 }
   /*end slider4*/
 
+
+  /*start know more about*/
+  
+
+.about-section {
+    background: var(--bg-color-1);
+    padding: 100px 0;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    text-align: justify;
+    font-size: 18px;
+    color: #333;
+}
+  /*end know more about*/
+
+
 /*PP ATTRACTION start*/
 
 .PP_Attract{
@@ -804,6 +835,7 @@ header .icons i:hover {
 }
 
 .PP_Attract .box-container1 .box1 .PP_att_con p{
+    text-align: justify;
     font-size: 1.5rem;
     line-height: 2;
     padding: 1rem 0;
@@ -820,10 +852,10 @@ header .icons i:hover {
 .PPattract_btn{
     display: inline-block;
     margin-top: 10px;
-    background: var(--bg-color-6);
-    color: var(--text-color-1);
+    background: var(--bg-color-7);
+    color: var(--text-color-4);
     padding: 10px 30px;
-    border: .1rem solid var(--text-color-1);
+    border-radius: .5rem;
     cursor: pointer;
     font-size: 17px;
     box-shadow: var(--box-shadow);
@@ -831,7 +863,9 @@ header .icons i:hover {
 
 .PPattract_btn:hover {
     transform: scale(1.1);
+    color: #188fbe;
 }
+
 
 /*PP ATTRACTION end*/
 
@@ -881,6 +915,7 @@ header .icons i:hover {
 }
 
 .CP_Attract .box-container2 .box2 .CP_att_con p{
+    text-align: justify;
     font-size: 1.5rem;
     line-height: 2;
     padding: 1rem 0;
@@ -897,16 +932,17 @@ header .icons i:hover {
 .CPattract_btn{
     display: inline-block;
     margin-top: 10px;
-    background: var(--bg-color-6);
-    color: var(--text-color-1);
+    background: var(--bg-color-7);
+    color: var(--text-color-4);
     padding: 10px 30px;
-    border: .1rem solid var(--text-color-1);
+    border-radius: .5rem;
     cursor: pointer;
     font-size: 17px;
 }
 
 .CPattract_btn:hover {
     transform: scale(1.1);
+    color: #188fbe;
 }
 
 /*Coron ATTRACTION end*/
@@ -956,6 +992,7 @@ header .icons i:hover {
 }
 
 .BP_Attract .box-container3 .box3 .BP_att_con p{
+    text-align: justify;
     font-size: 1.5rem;
     line-height: 2;
     padding: 1rem 0;
@@ -972,16 +1009,17 @@ header .icons i:hover {
 .BPattract_btn{
     display: inline-block;
     margin-top: 10px;
-    background: var(--bg-color-6);
-    color: var(--text-color-1);
+    background: var(--bg-color-7);
+    color: var(--text-color-4);
     padding: 10px 30px;
-    border: .1rem solid var(--text-color-1);
+    border-radius: .5rem;
     cursor: pointer;
     font-size: 17px;
 }
 
 .BPattract_btn:hover {
     transform: scale(1.1);
+    color:#188fbe;
 }
 
 /*Busuanga ATTRACTION end*/
@@ -1031,6 +1069,7 @@ header .icons i:hover {
 }
 
 .EP_Attract .box-container4 .box4 .EP_att_con p{
+    text-align: justify;
     font-size: 1.5rem;
     line-height: 2;
     padding: 1rem 0;
@@ -1047,22 +1086,1022 @@ header .icons i:hover {
 .EPattract_btn{
     display: inline-block;
     margin-top: 10px;
-    background: var(--bg-color-6);
-    color: var(--text-color-1);
+    background: var(--bg-color-7);
+    color: var(--text-color-4);
     padding: 10px 30px;
-    border: .1rem solid var(--text-color-1);
+    border-radius: .5rem;
     cursor: pointer;
     font-size: 17px;
 }
 
 .EPattract_btn:hover {
     transform: scale(1.1);
+    color:#188fbe;
 }
 
 /*El Nido ATTRACTION end*/
 
+/*Puerto HOTAIR start*/
+.PP_hotair1 h2{
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 25px;
+    color: var(--text-color-1);
+    text-decoration: underline whitesmoke;
+}
+
+.PP_hotair1 .slide{
+    background: var(--bg-color-1);
+    border: .1rem solid rgba(0 0 0 0.2);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    margin-bottom: 4rem;
+}
+
+.PP_hotair1 .slide .image1{
+    height: 25rem;
+    width: 100;
+    padding: 1.5rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.PP_hotair1 .slide .image1 img{
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+    object-fit: cover; 
+}
+
+.PP_hotair1 .slide .image1 .fa-hotel{
+    position: absolute;
+    top: 2.5rem; right: 2.5rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    text-align: center;
+    font-size: 2rem;
+    background: var(--bg-color-1);
+    color: var(--text-color-1);
+    border-radius: 50%;
+}
+
+.PP_hotair1 .slide .image1 .fa-bed{
+    position: absolute;
+    top: 2.5rem; right: 2.5rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    text-align: center;
+    font-size: 2rem;
+    background: var(--bg-color-1);
+    color: var(--text-color-1);
+    border-radius: 50%;
+}
+
+.PP_hotair1 .PPhotair_btn{
+    display: inline-block;
+    margin-top: 10px;
+    background: var(--bg-color-7);
+    color: var(--text-color-4);
+    padding: 10px 30px;
+    border-radius: .5rem;
+    cursor: pointer;
+    font-size: 17px;
+    box-shadow: var(--box-shadow);
+}
+
+.PP_hotair1 .PPhotair_btn:hover{
+    transform: scale(1.1);
+    color:#188fbe;
+}
+
+.PP_hotair1 .slide .content{
+    padding: 2rem;
+    padding-top: 0;
+
+}
+
+.PP_hotair1 .slide .content h3{
+    font-size: 2.5rem;
+    color: var(--text-color-1);
+
+}
+
+.PP_hotair1 .slide .content p{
+    font-size: 1.6rem;
+    color: var(--text-color-1);
+    padding: .5rem 0;
+    line-height: 1.5;
+}
+
+.PP_hotair1 .slide .content .stars{
+    padding: 1rem 0;
+}
+
+.PP_hotair1 .slide .content .stars i{
+    font-size: 1.7rem;
+    color: var(--text-color-1);
+}
+
+/*Puerto HOTAIR end*/
+
+/*Puerto HOTAIR start*/
+.CP_hotair1 h2{
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 25px;
+    color: var(--text-color-1);
+    text-decoration: underline whitesmoke;
+}
+
+.CP_hotair1 .slide{
+    background: var(--bg-color-1);
+    border: .1rem solid rgba(0 0 0 0.2);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    margin-bottom: 4rem;
+}
+
+.CP_hotair1 .slide .image1{
+    height: 25rem;
+    width: 100;
+    padding: 1.5rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.CP_hotair1 .slide .image1 img{
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+    object-fit: cover; 
+}
+
+.CP_hotair1 .slide .image1 .fa-hotel{
+    position: absolute;
+    top: 2.5rem; right: 2.5rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    text-align: center;
+    font-size: 2rem;
+    background: var(--bg-color-1);
+    color: var(--text-color-1);
+    border-radius: 50%;
+}
+
+.CP_hotair1 .slide .image1 .fa-bed{
+    position: absolute;
+    top: 2.5rem; right: 2.5rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    text-align: center;
+    font-size: 2rem;
+    background: var(--bg-color-1);
+    color: var(--text-color-1);
+    border-radius: 50%;
+}
+
+.CP_hotair1 .CPhotair_btn{
+    display: inline-block;
+    margin-top: 10px;
+    background: var(--bg-color-7);
+    color: var(--text-color-4);
+    padding: 10px 30px;
+    border-radius: .5rem;
+    cursor: pointer;
+    font-size: 17px;
+    box-shadow: var(--box-shadow);
+}
+
+.CP_hotair1 .CPhotair_btn:hover{
+    transform: scale(1.1);
+    color:#188fbe;
+}
+
+.CP_hotair1 .slide .content{
+    padding: 2rem;
+    padding-top: 0;
+
+}
+
+.CP_hotair1 .slide .content h3{
+    font-size: 2.5rem;
+    color: var(--text-color-1);
+
+}
+
+.CP_hotair1 .slide .content p{
+    font-size: 1.6rem;
+    color: var(--text-color-1);
+    padding: .5rem 0;
+    line-height: 1.5;
+}
+
+.CP_hotair1 .slide .content .stars{
+    padding: 1rem 0;
+}
+
+.CP_hotair1 .slide .content .stars i{
+    font-size: 1.7rem;
+    color: var(--text-color-1);
+}
+
+/*Puerto HOTAIR end*/
+
+/*Busuanga HOTAIR start*/
+.BP_hotair1 h2{
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 25px;
+    color: var(--text-color-1);
+    text-decoration: underline whitesmoke;
+}
+
+.BP_hotair1 .slide{
+    background: var(--bg-color-1);
+    border: .1rem solid rgba(0 0 0 0.2);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    margin-bottom: 4rem;
+}
+
+.BP_hotair1 .slide .image1{
+    height: 25rem;
+    width: 100;
+    padding: 1.5rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.BP_hotair1 .slide .image1 img{
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+    object-fit: cover; 
+}
+
+.BP_hotair1 .slide .image1 .fa-hotel{
+    position: absolute;
+    top: 2.5rem; right: 2.5rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    text-align: center;
+    font-size: 2rem;
+    background: var(--bg-color-1);
+    color: var(--text-color-1);
+    border-radius: 50%;
+}
+
+.BP_hotair1 .slide .image1 .fa-bed{
+    position: absolute;
+    top: 2.5rem; right: 2.5rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    text-align: center;
+    font-size: 2rem;
+    background: var(--bg-color-1);
+    color: var(--text-color-1);
+    border-radius: 50%;
+}
+
+.BP_hotair1 .BPhotair_btn{
+    display: inline-block;
+    margin-top: 10px;
+    background: var(--bg-color-7);
+    color: var(--text-color-4);
+    padding: 10px 30px;
+    border-radius: .5rem;
+    cursor: pointer;
+    font-size: 17px;
+    box-shadow: var(--box-shadow);
+}
+
+.BP_hotair1 .BPhotair_btn:hover{
+    transform: scale(1.1);
+    color:#188fbe;
+}
+
+.BP_hotair1 .slide .content{
+    padding: 2rem;
+    padding-top: 0;
+
+}
+
+.BP_hotair1 .slide .content h3{
+    font-size: 2.5rem;
+    color: var(--text-color-1);
+
+}
+
+.BP_hotair1 .slide .content p{
+    font-size: 1.6rem;
+    color: var(--text-color-1);
+    padding: .5rem 0;
+    line-height: 1.5;
+}
+
+.BP_hotair1 .slide .content .stars{
+    padding: 1rem 0;
+}
+
+.BP_hotair1 .slide .content .stars i{
+    font-size: 1.7rem;
+    color: var(--text-color-1);
+}
+
+/*Puerto HOTAIR end*/
+
+/*Puerto HOTAIR start*/
+.EP_hotair1 h2{
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 25px;
+    color: var(--text-color-1);
+    text-decoration: underline whitesmoke;
+}
+
+.EP_hotair1 .slide{
+    background: var(--bg-color-1);
+    border: .1rem solid rgba(0 0 0 0.2);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    margin-bottom: 4rem;
+}
+
+.EP_hotair1 .slide .image1{
+    height: 25rem;
+    width: 100;
+    padding: 1.5rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.EP_hotair1 .slide .image1 img{
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+    object-fit: cover; 
+}
+
+.EP_hotair1 .slide .image1 .fa-hotel{
+    position: absolute;
+    top: 2.5rem; right: 2.5rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    text-align: center;
+    font-size: 2rem;
+    background: var(--bg-color-1);
+    color: var(--text-color-1);
+    border-radius: 50%;
+}
+
+.EP_hotair1 .slide .image1 .fa-bed{
+    position: absolute;
+    top: 2.5rem; right: 2.5rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    text-align: center;
+    font-size: 2rem;
+    background: var(--bg-color-1);
+    color: var(--text-color-1);
+    border-radius: 50%;
+}
+
+.EP_hotair1 .EPhotair_btn{
+    display: inline-block;
+    margin-top: 10px;
+    background: var(--bg-color-7);
+    color: var(--text-color-4);
+    padding: 10px 30px;
+    border-radius: .5rem;
+    cursor: pointer;
+    font-size: 17px;
+    box-shadow: var(--box-shadow);
+}
+
+.EP_hotair1 .EPhotair_btn:hover{
+    transform: scale(1.1);
+    color:#188fbe;
+}
+
+.EP_hotair1 .slide .content{
+    padding: 2rem;
+    padding-top: 0;
+
+}
+
+.EP_hotair1 .slide .content h3{
+    font-size: 2.5rem;
+    color: var(--text-color-1);
+
+}
+
+.EP_hotair1 .slide .content p{
+    font-size: 1.6rem;
+    color: var(--text-color-1);
+    padding: .5rem 0;
+    line-height: 1.5;
+}
+
+.EP_hotair1 .slide .content .stars{
+    padding: 1rem 0;
+}
+
+.EP_hotair1 .slide .content .stars i{
+    font-size: 1.7rem;
+    color: var(--text-color-1);
+}
+
+/*El Nido HOTAIR end*/
+
+/*Palawan Transpo*/
+.service {background-color: var(--alice-blue); 
+}
+
+.section-subtitle, .section-title, .section-text { text-align: center; margin: 20px; } 
+
+.service .section-title { margin-block-end: 20px; } 
+
+.service .section-text {margin-block-end: 50px; }
+ul{
+    list-style-type: none;
+}
+.service-list {
+    display: grid;
+    gap: 30px;
+    text-align: justify;
+    grid-template-columns: 1fr 1fr;
+}
+
+.service-card {
+    background-color: var(--white);
+    padding: 30px;
+    border: 20px solid var(--cultured-3);
+    transition: var(--transition);
+}
+
+/*Vehicle starts*/
+.wrapper {
+    background: rgb(255, 144, 53);
+}
+
+.inner-wrapper {
+    width: 100%; /* Adjusted width for better visibility */
+    margin: 0 auto;
+    color: #FFF;
+    padding: 40px;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.inner-wrapper h1 {
+    padding: 20px;
+    text-align: center;
+    font-size: 300;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+.col-6 img{
+    width: 50%;
+            height: auto;
+            object-fit: cover;
+}
+
+.desc {
+    padding: 0 50px; /* Adjusted padding for better alignment */
+    text-align: left; /* Align text to the left */
+}
+
+
+.desc h1 {
+    padding: 20px;
+}
+
+.desc ul {
+    padding-left: 20px; 
+}
+
+.desc ul li {
+    text-align: left;
+    font-size: 10px; 
+}
+
+.vehicle_btn {
+    text-align: left; 
+}
+
+.vehicle_btn a {
+    display: inline-block;
+    margin-top: 10px;
+    background: var(--bg-color-7);
+    color: var(--text-color-4);
+    padding: 10px 30px;
+    border-radius: .5rem;
+    cursor: pointer;
+    font-size: 17px;
+    box-shadow: var(--box-shadow);
+}
+
+.btn a:hover {
+    background-color: #0056b3;
+}
+
+/*Vehicle starts*/
+.wrapper {
+    background: rgb(255, 144, 53);
+}
+
+.inner-wrapper {
+    width: 100%; /* Adjusted width for better visibility */
+    margin: 0 auto;
+    color: #FFF;
+    padding: 40px;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.inner-wrapper h1 {
+    padding: 20px;
+    text-align: center;
+    font-size: 300;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+.col-6 img{
+    width: 50%;
+            height: auto;
+            object-fit: cover;
+}
+
+.desc {
+    padding: 0 50px; /* Adjusted padding for better alignment */
+    text-align: left; /* Align text to the left */
+}
+
+
+.desc h1 {
+    padding: 20px;
+}
+
+.desc ul {
+    padding-left: 20px; 
+}
+
+.desc ul li {
+    text-align: left;
+    font-size: 10px; 
+}
+
+.vehicle_btn {
+    text-align: left; 
+}
+
+.vehicle_btn a {
+    display: inline-block;
+    margin-top: 10px;
+    background: var(--bg-color-7);
+    color: var(--text-color-4);
+    padding: 10px 30px;
+    border-radius: .5rem;
+    cursor: pointer;
+    font-size: 17px;
+    box-shadow: var(--box-shadow);
+}
+
+.btn a:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+/*Puerto fd start*/
+.section__container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 5rem 1rem;
+  }
+  
+  .section__header {
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    text-align: center;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  img {
+    width: 100%;
+    display: flex;
+  }
+  
+  
+  .popular__grid {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  
+  .popular__card {
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .popular__content {
+    padding: 1rem;
+  }
+  
+  .popular__card__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .popular__card__header h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-color-1);
+  }
+  
+  .popular__content p {
+    color: var(--text-color-1);
+  }
+
+/*Coron fd start*/
+section__container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 5rem 1rem;
+  }
+  
+  .section__header {
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    text-align: center;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  img {
+    width: 100%;
+    display: flex;
+  }
+
+.popular__grid {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  
+  .popular__card {
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .popular__content {
+    padding: 1rem;
+  }
+  
+  .popular__card__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .popular__card__header h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-color-1);
+  }
+  
+  .popular__content p {
+    color: var(--text-color-1);
+  }
+
+/*Coron fd end*/
+
+/*Busuanga fd start*/
+
+.section__container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 5rem 1rem;
+  }
+  
+  .section__header {
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    text-align: center;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  img {
+    width: 100%;
+    display: flex;
+  }
+  
+  .popular__grid {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  
+  .popular__card {
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .popular__content {
+    padding: 1rem;
+  }
+  
+  .popular__card__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .popular__card__header h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-color-1);
+  }
+  
+  .popular__content p {
+    color: var(--text-color-1);
+  }
+/*Busuanga fd end*/
+
+
+/*elnido fd start*/
+.section__container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 5rem 1rem;
+  }
+  
+  .section__header {
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    text-align: center;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  img {
+    width: 100%;
+    display: flex;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+  }
+  
+  .popular__grid {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  
+  .popular__card {
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .popular__content {
+    padding: 1rem;
+  }
+  
+  .popular__card__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .popular__card__header h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-color-1);
+  }
+  
+  .popular__content p {
+    color: var(--text-color-1);
+  }
+/*Elnido fd end*/
+
+.about{
+    width: 100;
+    padding: 78px 0px;
+    background-color: aqua;
+}
+.about img{
+height: auto;
+width: 420px;
+}
+.about-text{
+width: 550px;
+}
+.main{
+width: 1130px;
+max-width: 95%;
+margin: 0 auto;
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+.about-text h1{
+color: black;
+font-size: 80px;
+text-transform: capitalize;
+margin-bottom: 20px;
+}
+.about-text p{
+text-align: justify;
+color: black;
+letter-spacing: 1px;
+line-height: 28px;
+font-size: 18px;
+margin-bottom: 45px;
+}
+
+
+
+
+
+
 
 /*footer start*/
+
+footer {
+    background: var(--bg-color-1);
+    padding-top: 25px;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-content{
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: center;
+
+
+}
+
+@font-face {
+    font-family: "Playball";
+    src:url("Font-Playball/Playball-Regular.ttf")
+}
+
+.footer-content h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: var(--text-color-1);
+    font-family: Playball;
+}
+
+
+.footer-content p{
+    width: 100;
+    padding: 10px;
+    font-size: 14px;
+    color: var(--text-color-1);
+}
+
+.footer-content p i {
+    margin-left : 2px;
+}
+
+.footer-content ul {
+    padding: 0;
+}
+
+.list {
+    padding: 0;
+}
+
+.list a {
+    display: block;
+    text-align: center;
+    padding: 7px;
+    text-decoration: none;
+    position: relative;
+    font-size: 14px;
+}
+
+.list a::before {
+    content: '';
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: #333;
+    transition-duration: .5s;
+}
+
+.list a:hover::before {
+    width: 70px;
+}
+
+.social-icons {
+    text-align: center;
+    padding: 1px;
+
+}
+
+.social-icons li {
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+}
+
+.social-icons i {
+    color: var(--text-color-1);
+    font-size: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00FFEF;
+}
+
+.social-icons i:hover {
+    color: #1E90FF;
+}
+
+.bottom-bar {
+    background: #87CEEB;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+
+.bottom-bar p {
+    color: #1560BD;
+    margin: 0;
+    font-size: 14px;
+}
 
 /*footer end*/
 
@@ -1116,7 +2155,7 @@ html {
         background: var(--bg-color-1);
         border-radius: .5rem;
         box-shadow: var(--box-shadow);
-        width: 25rem;
+        width: 20rem;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
 
@@ -1124,12 +2163,12 @@ html {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
 
-    header .navbar a{
+    header .navbar ul li a{
         text-align: center;
         display: block;
         margin: 1.5rem;
-        padding: 1.5rem;
-        font-size: 1.5rem;
+        padding: 18px;
+        font-size: 15px;
         color: var(--text-color-1);
         border-radius: .5rem;
         background: var(--bg-color-3);
@@ -1159,9 +2198,20 @@ html {
         width: 300%;
         height: 300%;
     }   
- 
+
+    .footer-content {
+        width: 33.3%; 
+        max-width: none; 
+        margin: 0; 
+        text-align: left; 
+
 
 }
+
+.inner-wrapper,
+    .about {
+        width: 90%; /* Adjusted width for smaller screens */
+    }
 
 @media (max-width:450px){
     html{
@@ -1179,6 +2229,6 @@ html {
  
 }
 
-
+}
 
 
