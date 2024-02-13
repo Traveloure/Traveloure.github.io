@@ -15,7 +15,9 @@
     --box-shadow: 0 .5rem 1.5rem rgba(0 00 0, 0.1);
 
 }
-
+.card-icon > img {
+    margin: 0px auto 0px auto;    
+}
 * {
     font-family: 'Poppins', sans-serif;
     margin: 0;
