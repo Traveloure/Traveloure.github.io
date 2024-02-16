@@ -843,7 +843,8 @@ header .icons i:hover {
     overflow: hidden;
 }
 
-.PP_Attract .box-container1 .box1 .image1 img{
+
+.PP_Attract .box-container2 .box1 .image1 img{
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -885,7 +886,6 @@ header .icons i:hover {
     border-radius: .5rem;
     cursor: pointer;
     font-size: 17px;
-    box-shadow: var(--box-shadow);
 }
 
 .PPattract_btn:hover {
@@ -1549,7 +1549,7 @@ header .icons i:hover {
 /*El Nido HOTAIR end*/
 
 /*Palawan Transpo*/
-.service {background-color: var(--alice-blue); 
+.service {background-color: var(--bg-color-1); 
 }
 
 .section-subtitle, .section-title, .section-text { text-align: center; margin: 20px; } 
@@ -1557,8 +1557,22 @@ header .icons i:hover {
 .service .section-title { margin-block-end: 20px; } 
 
 .service .section-text {margin-block-end: 50px; }
+
+.section-text {
+    text-align: center;
+}
 ul{
     list-style-type: none;
+}
+
+.card-title {
+    margin-bottom: 10px;
+}
+
+.card-text {
+    margin-bottom: 30px;
+    font-size: 10px;
+    padding: 10px;
 }
 .service-list {
     display: grid;
@@ -1567,13 +1581,18 @@ ul{
     grid-template-columns: 1fr 1fr;
 }
 
-.service-card {
-    background-color: var(--white);
+.card-icon {
+    width: 300px;
+    height: 50px;
+    margin-bottom: 200px;
+}
+
+.service-card li {
+    background-color: var(--bg-color-1);
     padding: 30px;
     border: 20px solid var(--cultured-3);
     transition: var(--transition);
 }
-
 
 
 /*Vehicle starts*/
@@ -1584,7 +1603,7 @@ ul{
 .inner-wrapper {
     width: 100%; 
     margin: 0 auto;
-    color: #FFF;
+    color: var(--text-color-1);
     padding: 40px;
     font-size: 15px;
     text-align: justify;
@@ -1605,8 +1624,8 @@ ul{
 
 .col-6 img{
     width: 50%;
-            height: auto;
-            object-fit: cover;
+    height: auto;
+    object-fit: cover;
 }
 
 .desc {
@@ -1616,6 +1635,7 @@ ul{
 
 
 .desc h1 {
+    color: var(--text-color-1);
     padding: 20px;
 }
 
@@ -1645,8 +1665,9 @@ ul{
 }
 
 .btn a:hover {
-    background: var(--bg-color-1);
+    background-color: #0056b3;
 }
+
 
 
 
@@ -1917,18 +1938,22 @@ ul{
 /*Elnido fd end*/
 
 /*About Us start*/
+
 .about{
-    width: 100;
-    padding: 78px 0px;
-    background: var(--bg-color-1);
+width: 100;
+
+background: var(--bg-color-1);
 }
+
 .about img{
 height: auto;
 width: 420px;
 }
+
 .about-text{
 width: 550px;
 }
+
 .main{
 width: 1130px;
 max-width: 95%;
@@ -1937,21 +1962,24 @@ display: flex;
 align-items: center;
 justify-content: space-around;
 }
+
 .about-text h1{
+text-align: center;
 color: var(--text-color-1);
-font-size: 80px;
-text-transform: capitalize;
+font-size: 40px;
 margin-bottom: 20px;
 }
+
 .about-text p{
 text-align: justify;
 color: var(--text-color-1);
 letter-spacing: 1px;
-line-height: 28px;
-font-size: 18px;
+line-height: 20px;
+font-size: 12px;
 margin-bottom: 45px;
 }
 
+/*About us end*/
 
 /*Contact page start*/
 .contact-container{
@@ -1973,7 +2001,7 @@ margin-bottom: 45px;
 
 .contact-right{
     flex-basis: 40%;
-    padding: 40px;
+    padding:  40px;
     background: var(--bg-color-1);
     color: var(--text-color-1);
 }
